@@ -1,0 +1,63 @@
+{
+    "env": {
+        "browser": true,
+        "es2021": true
+    },
+    "extends": [
+        "plugin:react/recommended",
+        "google"
+    ],
+    "parser": "@typescript-eslint/parser",
+    "parserOptions": {
+        "ecmaFeatures": {
+            "jsx": true
+        },
+        "ecmaVersion": "latest",
+        "sourceType": "module"
+    },
+    "plugins": [
+        "react",
+        "@typescript-eslint"
+    ],
+    "rules": {
+        "@typescript-eslint/no-shadow": ["error"],
+        "@typescript-eslint/no-unused-vars": ["warn"],
+        "@typescript-eslint/no-magic-numbers": [
+            "warn",
+            {
+                "ignoreEnums": true,
+                "ignoreNumericLiteralTypes": true
+            }
+        ],
+        "@typescript-eslint/no-use-before-define": ["error"],
+        "no-unused-vars": "off",
+        "no-magic-numbers": "off",
+
+        "indent": ["error", 2],
+        "semi": ["error", "always"],
+        "quotes": ["error", "single"],
+        "max-len": ["error", { "code": 80 }],
+        "no-var": "error",
+        "prefer-arrow-callback": "error",
+        "camelcase": "error",
+        "eqeqeq": "error",
+        "no-multi-spaces": "error",
+        "padding-line-between-statements": [
+            "error",
+            { "blankLine": "always", "prev": "*", "next": "function" },
+            { "blankLine": "always", "prev": "function", "next": "*" }
+        ],
+        "prefer-const": "warn",
+        "import/order": [
+            "error",
+            {
+                "groups": [["builtin", "external"], "internal", ["parent", "sibling", "index"]],
+                "newlines-between": "always",
+                "alphabetize": {
+                    "order": "asc",
+                    "caseInsensitive": true
+                }
+            }
+        ]
+    }
+}

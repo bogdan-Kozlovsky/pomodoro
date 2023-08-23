@@ -1,0 +1,27 @@
+.h {
+  padding: 15px 0;
+
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+
+  &__logo {
+    width: 50px;
+  }
+
+  &__list {
+    display: flex;
+    align-items: center;
+
+    li {
+      margin: 0 5px;
+    }
+  }
+
+  &__progress {
+    border-bottom: 2px solid white;
+  }
+}

@@ -1,0 +1,29 @@
+.t {
+
+  &__wrap {
+    padding: 10px 0;
+    border-radius: 10px;
+    background-color: orange;
+  }
+
+  &__list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+
+    li {
+      margin: 0 5px;
+    }
+  }
+
+  &__timer {
+    font-size: 25px;
+    line-height: 30px;
+    text-align: center;
+  }
+
+  &__wrap_button {
+    text-align: center;
+  }
+}

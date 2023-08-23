@@ -1,9 +1,16 @@
 import React from 'react';
+import {Description, Header, TimerControl, Todolist} from "/src/componentns/common";
 
 const App = () => {
   return (
-    <div>
-      hello
+    <div className='container'>
+      <Header/>
+
+      <TimerControl/>
+
+      <Description/>
+
+      <Todolist/>
     </div>
   );
 };
