@@ -1,5 +1,5 @@
 import React from 'react';
-import {Description, Header, TimerControl, Todolist} from "/src/componentns/common";
+import {Description, Header, TimerControl, Todolist} from "/src/componentns";
 
 const App = () => {
   return (
